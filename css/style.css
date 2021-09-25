@@ -1,0 +1,616 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+:root {
+  --main-color: rgba(50, 215, 181, 1);
+  --second-color: rgba(13, 177, 190, 1);
+  --box-shadow: rgba(13, 177, 190, 0.5);
+  --fav-Color: #edf2f8; /*#AABAD3; */
+  --font-color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 100%;
+  background: #fff;
+  font-weight: 500 !important;
+  font-family: "Nunito", sans-serif;
+}
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+/*header section start*/
+nav {
+  /* box-shadow: 0 .5rem .5rem var(--box-shadow) ; */
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5) !important ;
+}
+nav img {
+  border: none !important;
+  box-shadow: none !important;
+}
+#navbarText {
+  text-transform: capitalize;
+}
+#navbarText :hover {
+  color: var(--main-color) !important;
+}
+#navbarText .active {
+  color: var(--second-color) !important;
+}
+.navbar-right #btnright {
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  );
+  font-size: 17px;
+  padding: 0.5rem;
+  border: none;
+}
+.navbar-right #btnright:hover {
+  opacity: 0.7;
+}
+/*header section end*/
+/*Showcase section start*/
+#showcase .row {
+  height: 65%;
+}
+#showcase {
+  background: url("../gif/vid.gif") no-repeat 0 100px;
+  background-attachment: fixed;
+  background-size:  100%;
+  margin-bottom: 30px;
+  padding-top: 300px;
+}
+#showcase h1 {
+  padding-bottom: 100px;
+  font-size: 3.5vw;
+  color: var(--box-shadow);
+  margin-bottom: 100px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 var(--box-shadow), 0 0px var(--main-color),
+    1px 0 var(--box-shadow), 0 -1px var(--second-color);
+  animation: showcase 0.5s linear 2s backwards;
+}
+@keyframes showcase {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+}
+#spanp {
+  color: black;
+}
+/*Showcase section end*/
+/* services section start */
+@keyframes services {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes servicescard {
+  0% {
+    opacity: 0;
+    transform: translatex(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0rem);
+  }
+}
+.card-body{
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  );
+}
+.card-text{
+  color: white;
+}
+.card{
+  margin-top: 1.5rem;
+}
+#Services {
+  background: var(--fav-Color);
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+#Services h2 {
+  color: var(--second-color);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  animation: services 1s linear 1s backwards;
+}
+#Services p {
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1rem;
+  animation: servicescard 1s linear 1s backwards;
+}
+
+.card:hover {
+  box-shadow: 0rem 0.1rem 0.8rem 0.6rem rgb(166, 239, 243);
+  transform: scale(1.05);
+}
+/* services section end */
+/* about section start */
+@keyframes about {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+#about {
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.about-img {
+  width: 450px;
+  height: auto;
+}
+#about h3 {
+  color: var(--second-color);
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  padding-bottom: 0.9rem;
+  font-size: 30px;
+  animation: services 1s linear 1s backwards;
+}
+#about p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: services 1.5s linear 1s backwards;
+}
+
+#about img {
+  width: 100%;
+  height: 400px;
+  animation: about 2s linear 0.5s backwards;
+}
+
+.accordion-button {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff !important;
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  );
+  letter-spacing: 2px;
+  box-shadow: none !important;
+}
+.accordion-button a.active {
+  color: var(--fav-Color) !important;
+}
+.accordion-collapse .accordion-body {
+  color: rgb(15, 15, 15) !important;
+}
+
+.accordion strong {
+  color: var(--second-color) !important;
+  letter-spacing: 0.1px;
+  font-weight: 550 !important;
+}
+/* about section end */
+
+#peopleval h5 {
+  color: var(--second-color);
+}
+#peopleval p {
+  color: var(--font-color);
+  text-transform: capitalize;
+  text-align: justify;
+
+}
+.more{
+  text-align: justify;
+}
+/* feature section start */
+/* feature*/
+#features {
+  background: var(--fav-Color);
+  margin-bottom: 25px;
+  padding: 25px 0;
+  text-align: center;
+}
+#features h1 {
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: var(--second-color);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+#features h2 {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+#features p {
+  letter-spacing: 2px;
+}
+#features .fas {
+  text-align: center;
+  font-size: 90px;
+  color: #376980;
+}
+/* feature section end */
+/* team section start */
+#team {
+  margin-top: 50px;
+}
+#team .heading {
+  font-size: 2.5rem;
+  letter-spacing: 2rem;
+}
+.our-team {
+  padding: 10px 10px 10px;
+  background: var(--fav-Color);
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  box-shadow: 0 0.2rem 0.2rem var(--box-shadow);
+}
+.our-team:hover {
+  transform: scale(1.05);
+}
+
+.our-team .pic {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  transition: all 0.5s ease 0s;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.our-team .title {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.2rem;
+}
+.our-team .post {
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.our-team i {
+  font-size: 2.5rem;
+  color: var(--second-color);
+}
+.our-team i:hover {
+  transform: scale(1.5);
+  color: var(--box-shadow);
+}
+/* team member end */
+/* contact as modal  start*/
+#contact {
+  margin: 2rem;
+}
+#contact p {
+  letter-spacing: 1rem;
+  font-weight: 550;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--main-color);
+}
+#contact .btn {
+  padding: 1rem;
+  border: none;
+  border-color: var(--main-color) !important;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    var(--second-color) 0%,
+    var(--main-color) 100%
+  );
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5) !important;
+  font-size: 2rem;
+  letter-spacing: 0.6rem;
+}
+#contact .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.modal-footer,
+.modal-header {
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  );
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+.modal-body {
+  padding: 1.5rem;
+}
+#contactmodel {
+  padding: 0;
+  margin-top: 0rem;
+  border-top: 0.1rem solid #fff;
+}
+#contactmodel h2 {
+  padding-top: 1rem;
+  color: var(--second-color);
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  padding-bottom: 0.9rem;
+}
+hr {
+  color: #fff;
+}
+#contactmodel form {
+  border: none;
+  margin-bottom: 0rem;
+  background: var(--fav-Color);
+  box-shadow: 0 0.1rem 2rem 0.3rem rgb(178, 212, 212);
+  padding: 2rem;
+}
+#contactmodel form input {
+  line-height: 2rem;
+}
+#contactmodel form textarea {
+  height: 8rem;
+}
+#contactmodel form .btn {
+  padding-top: 0rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.6rem;
+  color: #fff;
+  border: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    var(--second-color) 0%,
+    var(--main-color) 100%
+  );
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5) !important;
+}
+#contactmodel form .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+/* contact as modal end */
+#footer {
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  );
+  font-size: 1rem;
+  color: var(--font-color) !important;
+  font-weight: 600px;
+}
+footer i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+footer a i:hover {
+  color: var(--main-color);
+  transform: scale(1.5);
+  border-radius: 5rem;
+}
+/* contact */
+@media (max-width: 800px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+}
+
+/* login and sign up */
+
+#modellogin {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#login,
+#Sign-up-user,
+#Sign-up-company {
+  padding: 1rem;
+  margin: 0.3rem;
+  box-shadow: 0 0.3rem 0.5rem 0.3rem rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#login img,
+#Sign-up-user img,
+#Sign-up-company img {
+  width: 100%;
+  padding: 2rem;
+}
+#login a,
+#Sign-up-user a,
+#Sign-up-company a {
+  font-size: 1rem;
+  font-weight: 600px;
+  letter-spacing: 0.3rem;
+  color: var(--main-color);
+}
+#login form,
+#Sign-up-user form,
+#Sign-up-company form {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+#login form h2,
+#Sign-up-user form h2,
+#Sign-up-company form h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  padding: 1rem;
+  color: var(--second-color);
+}
+#login form .form-group,
+#Sign-up-user form .form-group,
+#Sign-up-company form .form-group {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#login label,
+#Sign-up-user label,
+#Sign-up-company label {
+  position: absolute;
+  left: 9;
+  top: 0;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #222;
+  font-weight: 400;
+}
+#login i,
+#Sign-up-user i,
+#Sign-up-company i {
+  display: inline-block;
+  font: normal normal normal 14px/1;
+  cursor: pointer;
+  color: var(--second-color);
+}
+#login input,
+#Sign-up-user input,
+#Sign-up-company input {
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #999 !important;
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  text-align: start;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-transform: none;
+}
+#Sign-up-company select {
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #999 !important;
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  text-align: start;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-transform: none;
+}
+#login input[type="checkbox"] {
+  font-size: 1rem;
+  background: var(--fav-Color);
+}
+
+#login form .btn,
+#Sign-up-user form .btn,
+#Sign-up-company form .btn {
+  text-align: right;
+  color: #fff;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  );
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5) !important;
+  padding: 0.2 1rem;
+  box-shadow: none !important;
+  border: none !important;
+  margin-top: auto;
+}
+#login a {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+#Sign-up-company a {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+#Sign-up-user a {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+#Sign-up-company .company {
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  ) !important;
+}
+#Sign-up-user .user {
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 0%,
+    var(--second-color) 100%
+  ) !important;
+}
+/* login and sign up end */
